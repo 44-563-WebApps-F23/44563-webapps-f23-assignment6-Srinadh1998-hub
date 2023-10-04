@@ -4,7 +4,7 @@ Introduction to Java Script and DOM
 
 Hosted At: [author file](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Srinadh1998-hub/author.html)
 
-Hosted At: [tips file](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Srinadh1998-hub/name-tips.html)
+Hosted At: [tips file](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Srinadh1998-hub/tips.html)
 
 Hosted At: [cruise file](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Srinadh1998-hub/cruise.html)
 
