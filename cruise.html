@@ -23,7 +23,21 @@
     </div>
     <br>
     <button type="button" onclick="selectCruise()" style="color:blue; background-color: cornsilk;">Select a cruise</button>
-    <p id="results"></p>
+    <br>
+    <p id="results">Your selection cruise is displayed here:</p>
+  </form>
+<br>
+  <h4>Cruise Price Details:</h4>
+  <form id="updateCruiseForm">
+    <label for="daysInput">Enter the number of days:</label>
+    <input type="text" id="daysInput" value="">
+    <br>
+    <br>
+    <label for="priceInput">Enter price:</label>
+    <input type="text" id="priceInput">
+    <br>
+    <br>
+    <input type="button" value="Update the cruise" style="background-color:#64c4ed;" onclick="updateCruise()">
   </form>
 
   <script>
@@ -56,20 +70,5 @@
     }
   </script>
   <br>
-
-  <h4>Cruise Price Details:</h4>
-  <form id="updateCruiseForm">
-    <label for="daysInput">Enter the number of days:</label>
-    <input type="text" id="daysInput" value="">
-    <br>
-    <br>
-    <label for="priceInput">Enter price:</label>
-    <input type="text" id="priceInput">
-    <br>
-    <br>
-    <input type="button" value="Update the cruise" style="background-color:#64c4ed;" onclick="updateCruise()">
-  </form>
-
-  <p id="results"></p>
 </body>
 </html> 
