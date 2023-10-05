@@ -44,13 +44,23 @@
       var resultsElement = document.getElementById("results");
       resultsElement.innerHTML = "Your selection have been recorded as:" + JSON.stringify(my_cruise);
     }
+    function updateCruise() {
+        var daysValue = document.getElementById("daysInput").value;
+        var priceValue = document.getElementById("priceInput").value;
+
+        my_cruise.days = daysValue;
+        my_cruise.price = priceValue;
+
+        var resultsElement = document.getElementById("results");
+        resultsElement.innerHTML =  "Your selection have been recorded as:" + JSON.stringify(my_cruise);
+    }
   </script>
   <br>
 
   <h4>Cruise Price Details:</h4>
   <form id="updateCruiseForm">
     <label for="daysInput">Enter the number of days:</label>
-    <input type="text" id="daysInput" value="days">
+    <input type="text" id="daysInput" value="">
     <br>
     <br>
     <label for="priceInput">Enter price:</label>
@@ -60,27 +70,6 @@
     <input type="button" value="Update the cruise" style="background-color:#64c4ed;" onclick="updateCruise()">
   </form>
 
-  <div id="cruiseInfo"></div>
-
-  <script>
-    var my_cruise = {
-      days: "days",
-      price: ""
-    };
-
-    function updateCruise() {
-
-      var daysValue = document.getElementById("daysInput").value;
-      var priceValue = document.getElementById("priceInput").value;
-
-      my_cruise.days = daysValue;
-      my_cruise.price = priceValue;
-
-      var cruiseInfoDiv = document.getElementById("cruiseInfo");
-      cruiseInfoDiv.innerHTML = "Cruise Information:<br>Days: " + my_cruise.days + "<br>Price: $" + my_cruise.price;
-    }
-  </script>
-
-
+  <p id="results"></p>
 </body>
 </html> 
